@@ -90,7 +90,8 @@ module.exports = {
         })
     ],
     devServer: {
-      contentBase: './dist',
-      port: 3000
+      contentBase: path.join(__dirname, './dist'),
+      publicPath: '/',
+      port: 3030
     }
 }

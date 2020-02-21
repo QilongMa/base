@@ -1,11 +1,16 @@
 import React from 'react';
+import {Header} from '@src/header';
 
-class App extends React.Component {
-    render() {
-        return <div>
-            <h1 className="hello">Hello React & Webpack!</h1>
-        </div>
-    }
-}
+const App = () => {
+    const name = 'world';
+    const str = `hello ${name}`;
+
+    return (
+        <>
+            <Header/>
+            {str}
+        </>
+    )
+};
 
 export default App;
